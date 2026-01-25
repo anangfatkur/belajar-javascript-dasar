@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tipe Data Object</title>
+  </head>
+  <body>
+    <script>
+      const person = {};
+
+      // <!--Note ubah Property/Attribute-->
+      person["nama"] = "Anang Fatkurrohman";
+      person["alamat"] = "Jakarta";
+      person["umur"] = 20;
+
+      console.table(person);
+      delete person["umur"];
+      console.table(person);
+    </script>
+  </body>
+</html>
