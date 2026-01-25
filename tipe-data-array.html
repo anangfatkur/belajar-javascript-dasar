@@ -17,6 +17,24 @@
       names.push("Bruno", "Amad", "Mbeumo");
 
       console.table(names);
+
+      console.info(names[0]);
+      console.info(names[1]);
+      console.info(names[2]);
+
+      names[0] = "Programmer";
+      names[1] = "Web";
+      names[2] = "Developer";
+
+      console.table(names);
+
+      delete names[3];
+      console.table(names);
+
+      names.push("Anang lagi");
+      console.table(names);
+      names[3] = "diubah lagi"; 
+      console.table(names);
     </script>
   </body>
 </html>
