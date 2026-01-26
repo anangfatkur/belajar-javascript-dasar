@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Operator In</title>
+</head>
+<body>
+  <script>
+    
+    const person = {
+       firstName : "Anang",
+       lastName : "Fatkurrohman"
+    };
+    if ("firstName" in person) {
+      alert(`Hello ${person.firstName}`);
+    } else {
+      alert("Hello");
+    }
+
+    // <!--NOTE Peringatan hanya mengecek apakah sebuah property atau index ada atau tidak-->
+    // <!--NOTE Jadi walaupun nilai property atau index nya undefined atau null, maka tetap dianggap ada-->
+
+    const student = {
+      firstName:"Anang",
+      middleName: undefined,
+      lastName: "Fatkurrohman"
+    }
+    if ("middleName" in student) {
+      alert (`Hello ${student.middleName}`);
+    } else {
+      alert("Hello Student");
+    }
+    const names = [null, "Anang", null];
+    const result = 0 in names;
+    document.writeln(`<p> ${result}</p>`);
+  </script>
+</body>
+</html>
