@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>With Statement</title>
+</head>
+<body>
+  <script>
+    const person = {
+      firstName : "Anang",
+      middleName : "Fatkurrohman",
+      lastName : "United"
+    };
+    // <!--Note : Tanpa With Statement-->
+    console.info(person.firstName);
+    console.info(person.middleName);
+    console.info(person.lastName);
+
+    // <!--Note : With Statement-->
+    with (person){
+    console.info(firstName);
+    console.info(middleName);
+    console.info(lastName);
+    }
+  </script>
+</body>
+</html>
