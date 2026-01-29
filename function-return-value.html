@@ -30,8 +30,23 @@
           return "E";
         } 
       }
-        const finalValue = getFinalValue(65);
+        const finalValue = getFinalValue(75);
         document.writeln(`<p>${finalValue}</p>`);
+
+    // <!-- Note : menghentikan eksekusi dengan return -->
+      function isContains(array, searchValue) {
+        for (const element of array) {
+          console.info(`Iterasi Element ${element}`);
+          if (element === searchValue) {
+            return true;
+          }
+        }
+        return false;
+      }
+      const array =[1,32,23423,234324,324,6766,32,11];
+      const search = 6766;
+      const found = isContains(array,search);
+      document.writeln(`<p>${found}</p>`);
   </script>
 </body>
 </html>
