@@ -24,6 +24,17 @@
 
     const name  = person.firstName || person.lastName;
     console.info(name);
+    
+    // <!--NOTE : "// data yang diambil"-->
+    // <!--NOTE : OR(||) mengambil nilai pertama yang falsy -->
+    console.info("HELLO" && ''); //string kosong
+    console.info("" && []);   //[]
+    console.info("0" && "NOL"); //NOL
+    console.info(0 && "NOL");   //0 
+    console.info(null && "NULL");   //null  
+    console.info(undefined && "UNDEFINED");   //undefined
+    console.info("undefined" && "null");   //null
+    console.info(0 && false);   //0
   </script>
 </body>
 </html>
