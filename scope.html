@@ -27,22 +27,28 @@
 
      function first (){
       // local scope first
-
       let firstVariable = "First";
+
+      function firstNested(){
+        console.info(firstVariable);
+        const firstNestedVariable = "First Nested";
+      }
+      firstNested();
+      console.info(firstNestedVariable);
      }
 
      function second (){
       // local scope second
       let secondVariable = "Second";
-      console.info (firstVariable);  // <!--! ERROR -->
+      // console.info (firstVariable);  // <!--! ERROR -->
      }
 
      first();
      second();
 
      // global scope
-     console.info(firstVariable);  // <!--! ERROR -->
-     console.info(secondVariable);  // <!--! ERROR -->
+    //  console.info(firstVariable);  // <!--! ERROR -->
+    //  console.info(secondVariable);  // <!--! ERROR -->
 
   </script>
 </body>
