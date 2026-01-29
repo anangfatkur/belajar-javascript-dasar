@@ -8,11 +8,28 @@
 <body>
   <script>
 
+// <!--Note :Anonymous Function di Variable -->
     const say = function(name){
       document.writeln(`<p>Hello ${name}</p>`);
     }
     say ("Anang");
     say ("Fatkurrohman");
+
+// <!--Note :Anonymous Function di Parameter -->
+    function giveMeName(callback){
+      callback("Anang");
+    }
+    giveMeName(say);
+
+    giveMeName(function(name){
+      document.writeln(`<p>Hi ${name}</p>`);
+    });
+     giveMeName(function(name){
+      document.writeln(`<p>Hi ${name}</p>`);
+    });
+     giveMeName(function(name){
+      document.writeln(`<p>Hi ${name}</p>`);
+    });
   </script>
 </body>
 </html>
