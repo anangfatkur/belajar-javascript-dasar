@@ -74,6 +74,16 @@
         console.info(sum([1, 1]));
         console.info(sum([10, 10]));
       }
+
+      // <!--NOTE : Default Value Destructuring Array-->
+      {
+        const names = ["Anang", "Amad", "Bruno"];
+        const [firstName, middleName = "Fatkurrohman", lastName = "Diallo"] =
+          names;
+        console.info(firstName);
+        console.info(middleName);
+        console.info(lastName);
+      }
     </script>
   </body>
 </html>
