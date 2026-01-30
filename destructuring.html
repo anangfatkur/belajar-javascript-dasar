@@ -96,6 +96,24 @@
         console.info(middleName);
         console.info(lastName);
       }
+
+      // <!--NOTE : Menggunakan Nama Variable Lain-->
+
+      {
+        const person = {
+          firstName: "Anang",
+          lastName: "Amad",
+          lastName: "United",
+        };
+        let {
+          firstName: namaDepan,
+          middleName: namaTengah = "Fatkurrohman",
+          lastName: namaBelakang,
+        } = person;
+        console.info(namaDepan);
+        console.info(namaTengah);
+        console.info(namaBelakang);
+      }
     </script>
   </body>
 </html>
