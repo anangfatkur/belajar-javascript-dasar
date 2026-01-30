@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Masalah Varible var</title>
+  </head>
+  <body>
+    <script>
+      // <!--NOTE : GLOBAL SCOPE-->
+      let i = 20;
+
+      for (let i = 0; i < 10; i++) {
+        // <!--NOTE : LOCAL SCOPE-->
+        console.info(`Local ${i}`);
+      }
+      console.info(`Global ${i}`);
+    </script>
+  </body>
+</html>
