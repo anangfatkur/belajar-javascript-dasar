@@ -8,13 +8,23 @@
 <body>
   <script>
     // <!--NOTE : MEMASUKAN FUNCTION KE DALAM PROPERTY DI OBJECT -->
-    const person = {
-      name : "Anang",
-      sayHello: function(name){
+    // const person = {
+    //   name : "Anang",
+    //   sayHello: function(name){
+    //     alert(`Hello ${name}`);
+    //   }
+    // }
+
+    // <!--NOTE : CARA KE 2(jika object sudah dibuat) -->
+      const person = {
+        name :"Anang"
+      };
+
+      person.sayHello =function(name) {
         alert(`Hello ${name}`);
       }
-    }
-    person.sayHello(`Amad`);
+      
+      person.sayHello(`Amad`);
   </script>
 </body>
 </html>
