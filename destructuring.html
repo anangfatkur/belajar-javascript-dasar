@@ -50,6 +50,21 @@
         console.info(country);
         console.info(others);
       }
+      // <!--NOTE : menggunakan Destructuring Function Parameter-->
+
+      {
+        function displayPerson({ firstName, middleName, lastName }) {
+          console.info(firstName);
+          console.info(middleName);
+          console.info(lastName);
+        }
+        const person = {
+          firstName: "Anang",
+          middleName: "Fatkurrohman",
+          lastName: "United",
+        };
+        displayPerson(person);
+      }
     </script>
   </body>
 </html>
