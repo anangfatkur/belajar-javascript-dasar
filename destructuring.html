@@ -84,6 +84,18 @@
         console.info(middleName);
         console.info(lastName);
       }
+
+      // <!--NOTE : Default Value Destructuring Object-->
+      {
+        const person = {
+          firstName: "Anang",
+          lastName: "Fatkurrohman",
+        };
+        let { firstName, middleName = "United", lastName } = person;
+        console.info(firstName);
+        console.info(middleName);
+        console.info(lastName);
+      }
     </script>
   </body>
 </html>
