@@ -1,30 +1,30 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Object Method</title>
-</head>
-<body>
-  <script>
-    // <!--NOTE : MEMASUKAN FUNCTION KE DALAM PROPERTY DI OBJECT -->
-    // const person = {
-    //   name : "Anang",
-    //   sayHello: function(name){
-    //     alert(`Hello ${name}`);
-    //   }
-    // }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Object Method</title>
+  </head>
+  <body>
+    <script>
+      // <!--NOTE : MEMASUKAN FUNCTION KE DALAM PROPERTY DI OBJECT -->
+      // const person = {
+      //   name : "Anang",
+      //   sayHello: function(name){
+      //     alert(`Hello ${name}`);
+      //   }
+      // }
 
-    // <!--NOTE : CARA KE 2(jika object sudah dibuat) -->
+      // <!--NOTE : CARA KE 2(jika object sudah dibuat) -->
       const person = {
-        name :"Anang"
+        name: "Anang",
       };
 
-      person.sayHello =function(name) {
+      person.sayHello = function (name) {
         alert(`Hello ${name}`);
-      }
-      
+      };
+
       person.sayHello(`Amad`);
-  </script>
-</body>
+    </script>
+  </body>
 </html>
