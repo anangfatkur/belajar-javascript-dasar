@@ -7,17 +7,41 @@
   </head>
   <body>
     <script>
-      const names = ["Anang", "Fatkurrohman", "Amad", "Dialo", "Cunha"];
-      // <!--NOTE : menggunakan Destructuring Array-->
-      const [firstName, middleName, lastName, ...others] = names;
-      // const firstName = names[0];
-      // const middleName = names[1];
-      // const lastName = names[2];
+      {
+        const names = ["Anang", "Fatkurrohman", "Amad", "Dialo", "Cunha"];
+        // <!--NOTE : menggunakan Destructuring Array-->
+        let [firstName, middleName, lastName, ...others] = names;
+        // const firstName = names[0];
+        // const middleName = names[1];
+        // const lastName = names[2];
 
-      console.info(firstName);
-      console.info(middleName);
-      console.info(lastName);
-      console.info(others);
+        console.info(firstName);
+        console.info(middleName);
+        console.info(lastName);
+        console.info(others);
+      }
+
+      {
+        // <!--NOTE : menggunakan Destructuring di dalam object-->
+
+        const person = {
+          firstName: "Anang",
+          lastName: "Fatkurrohman",
+          address: {
+            street: "Jalan Jakarta Raya",
+            city: "Jakarta",
+            country: "Indonesia",
+          },
+          hobby: "Running",
+          channel: "Anang Fatkurrohman",
+        };
+
+        let { firstName, lastName, address, ...others } = person;
+        console.info(firstName);
+        console.info(lastName);
+        console.info(address);
+        console.info(others);
+      }
     </script>
   </body>
 </html>
